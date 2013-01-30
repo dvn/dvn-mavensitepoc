@@ -1,0 +1,74 @@
+## DVN Maven site
+
+You're looking at the DVN Maven site. <https://github.com/cescoffier/maven-play2-plugin> was used as a starting point.
+
+Much of the site is build from the code itself as well as what you put in `pom.xml`.
+
+The [Project Summary](project-summary.html) comes from:
+
+    <groupId>edu.harvard.iq</groupId>
+    <artifactId>dvn</artifactId>
+    <version>3.4</version>
+    <packaging>maven-plugin</packaging>
+    <name>Dataverse Network</name>
+
+    <description>A web application for sharing, citing, analyzing, and preserving research data</description>
+    <url>http://thedata.org</url>
+    <inceptionYear>2007</inceptionYear>
+
+[Issue Tracking](issue-tracking.html):
+
+    <issueManagement>
+        <system>Redmine</system>
+	<url>https://redmine.hmdc.harvard.edu/projects/dvn</url>
+    </issueManagement>
+
+[Mailing Lists](mail-lists.html):
+
+    <mailingLists>
+        <mailingList>
+            <name>Dataverse Users Community</name>
+            <subscribe>https://groups.google.com/group/dataverse-community</subscribe>
+            <unsubscribe>https://groups.google.com/group/dataverse-community</unsubscribe>
+            <post>dataverse-community@googlegroups.com</post>
+            <archive>https://groups.google.com/group/dataverse-community</archive>
+        </mailingList>
+    </mailingLists>
+
+[Project Team](team-list.html):
+
+    <developers>
+        <developer>
+            <name>Philip Durbin</name>
+            <email>philip_durbin@harvard.edu</email>
+            <organization>Harvard</organization>
+            <properties>
+                <github>pdurbin</github>
+            </properties>
+        </developer>
+    </developers>
+
+[Source Repository](source-repository.html):
+
+    <scm>
+        <connection>scm:git:git@github.com:IQSS/dvn.git</connection>
+        <url>https://github.com/IQSS/dvn</url>
+        <developerConnection>scm:git:git@github.com:IQSS/dvn.git</developerConnection>
+    </scm>
+
+---
+
+More stuff...
+
+
+"${project.artifactId}" is the `project.artifactId`, for example.
+
+These seem to be Maven "goals":
+
+* [${project.artifactId}:copy-dependencies](./copy-dependencies-mojo.html) copies the dependencies (from the compile
+ scope) to the _lib_ folder.
+* [${project.artifactId}:compile](./compile-mojo.html) compiles your application.
+* [${project.artifactId}:test](./test-mojo.html) tests your application.
+* [${project.artifactId}:package](./package-mojo.html) packages your application as a Jar and a Zip.
+* [${project.artifactId}:clean](./clean-mojo.html) cleans the project.
+* [${project.artifactId}:run](./run-mojo.html) runs the application (ctrl-c to exit).
