@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>dvn:copy-dependencies</title>
+  </properties>
+  <body>
+    <section name="dvn:copy-dependencies">
+      <p><strong>Full name</strong>:</p>
+      <p>edu.harvard.iq:dvn:3.4:copy-dependencies</p>
+      <p><strong>Description</strong>:</p>
+      <div>Copy project dependencies to the <tt>lib</tt> folder.</div>
+      <p><strong>Attributes</strong>:</p>
+      <ul>
+        <li>Requires a Maven project to be executed.</li>
+        <li>Requires dependency resolution of artifacts in scope: <code>test</code>.</li>
+      </ul>
+      <subsection name="Optional Parameters">
+        <table border="0">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Since</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><strong><a href="#lib">lib</a></strong></td>
+            <td><code>File</code></td>
+            <td><code>-</code></td>
+            <td>Where are the dependencies copied.<br/><strong>Default value is</strong>: <code>lib</code>.</td>
+          </tr>
+        </table>
+      </subsection>
+      <subsection name="Parameter Details">
+        <p><strong><a name="lib">lib</a>:</strong></p>
+        <div>Where are the dependencies copied.</div>
+        <ul>
+          <li><strong>Type</strong>: <code>java.io.File</code></li>
+          <li><strong>Required</strong>: <code>No</code></li>
+          <li><strong>Default</strong>: <code>lib</code></li>
+        </ul>
+      </subsection>
+    </section>
+  </body>
+</document>
